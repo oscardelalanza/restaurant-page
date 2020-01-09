@@ -1,0 +1,20 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Microverse ES6 project",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscardelalanza/restaurant-page.git"
+  },
+  "author": "Oscar De La Lanza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscardelalanza/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/oscardelalanza/restaurant-page#readme"
+}
