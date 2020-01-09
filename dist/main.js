@@ -86,27 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/dom-elemets.js":
-/*!****************************!*\
-  !*** ./src/dom-elemets.js ***!
-  \****************************/
-/*! exports provided: header */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"header\", function() { return header; });\nconst header = () => {\n\n    const header = document.createElement('header');\n    const title = document.createElement('h1');\n    const subtitle = document.createElement('h3');\n\n    title.textContent = 'The Coffee Shop';\n    subtitle.textContent = 'The Coffee Shop in small characters :)';\n    header.appendChild(title);\n    header.appendChild(subtitle);\n\n    return header;\n\n};\n\n\n\n//# sourceURL=webpack:///./src/dom-elemets.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _dom_elemets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dom-elemets */ \"./src/dom-elemets.js\");\n\n\nconst content = document.getElementById('content');\n\ncontent.appendChild(Object(_dom_elemets__WEBPACK_IMPORTED_MODULE_0__[\"header\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
