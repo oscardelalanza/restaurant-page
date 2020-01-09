@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/oscardelalanza/restaurant-page/issues"
   },
-  "homepage": "https://github.com/oscardelalanza/restaurant-page#readme"
+  "homepage": "https://github.com/oscardelalanza/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5"
+  }
 }
