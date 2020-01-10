@@ -15,7 +15,7 @@ export const nav = () => {
     homeLink.href = '#';
     homeLink.addEventListener('click', () => {
 
-        content.innerText = '';
+        content.innerHTML = '';
         content.appendChild(nav());
         content.appendChild(home());
         content.appendChild(footer());
