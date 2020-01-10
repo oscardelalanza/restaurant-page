@@ -1,15 +1,9 @@
 // home page
 export const home = () => {
 
-    const header = document.createElement('section');
-    const title = document.createElement('h1');
-    const subtitle = document.createElement('h3');
+    const home = document.createElement('div');
+    const title = document.createElement('h2');
+    const content = document.createElement('p');
 
-    title.innerText = 'The Coffee Shop';
-    subtitle.innerText = 'The Coffee Shop in small characters :)';
-    header.appendChild(title);
-    header.appendChild(subtitle);
-
-    return header;
-
+    return home;
 };
