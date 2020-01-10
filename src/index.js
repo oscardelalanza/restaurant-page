@@ -3,6 +3,7 @@ import { home } from './home';
 import { menu, gallery } from './menu';
 import { location, map } from './contact';
 import { footer } from './footer';
+import './sass/styles.scss';
 
 const content = document.getElementById('content');
 
