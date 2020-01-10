@@ -14,7 +14,7 @@ const menu = () => {
     const articleFoods = document.createElement('article');
     const title = document.createElement('h3');
 
-    title.textContent = 'Menu';
+    title.innerText = 'Menu';
 
     for (let i = 0; i < 5; i++) {
 
@@ -22,9 +22,9 @@ const menu = () => {
         const price = document.createElement('p');
         const description = document. createElement('p');
 
-        name.textContent = 'Lorem ipsum dolor.';
-        price.textContent = Math.floor(Math.random() * 10).toString();
-        description.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, non.';
+        name.innerText = 'Lorem ipsum dolor.';
+        price.innerText = '$' + Math.floor(Math.random() * 30).toString();
+        description.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, non.';
 
         articleDrinks.appendChild(name);
         articleDrinks.appendChild(price);
