@@ -45,8 +45,6 @@ const map = () => {
     map.height = '600';
     map.frameBorder = '0';
     map.style.border = '0';
-    map.allowFullscreen = '';
-
 
     return map;
 };

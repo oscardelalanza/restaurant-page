@@ -1,6 +1,7 @@
 import { home } from './home';
 import { footer } from './footer';
 import { menu, gallery } from './menu';
+import { location, map } from './contact';
 
 // navigation menu
 export const nav = () => {
@@ -37,6 +38,15 @@ export const nav = () => {
 
     contactLink.innerText = 'Contact Us';
     contactLink.href = '#';
+    contactLink.addEventListener('click', () => {
+
+        content.innerHTML = '';
+        content.appendChild(nav());
+        content.appendChild(location());
+        content.appendChild(map());
+        content.appendChild(footer());
+
+    });
 
     navTag.appendChild(homeLink);
     navTag.appendChild(menuLink);
