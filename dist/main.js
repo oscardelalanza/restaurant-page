@@ -86,14 +86,39 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/domElements.js":
-/*!****************************!*\
-  !*** ./src/domElements.js ***!
-  \****************************/
-/*! exports provided: main, footer */
-/***/ (function(module, exports) {
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/*! exports provided: footer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("throw new Error(\"Module parse failed: Export 'footer' is not defined (42:4)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| export {\\n|     main,\\n>     footer,\\n| };\");\n\n//# sourceURL=webpack:///./src/domElements.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"footer\", function() { return footer; });\nconst footer = () => {\n\n    const footer = document.createElement('footer');\n    const text = document.createElement('p');\n\n    text.innerText = 'Oscar De La Lanza 2020';\n    footer.appendChild(text);\n\n    return footer;\n\n};\n\n\n//# sourceURL=webpack:///./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/*! exports provided: nav */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"nav\", function() { return nav; });\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n// navigation menu\nconst nav = () => {\n\n    const header = document.createElement('header');\n    const navTag = document.createElement('nav');\n    const homeLink = document.createElement('a');\n    const menuLink = document.createElement('a');\n    const contactLink = document.createElement('a');\n    const content = document.getElementById('content');\n\n    homeLink.innerText = 'Home';\n    homeLink.href = '#';\n    homeLink.addEventListener('click', () => {\n\n        content.innerText = '';\n        content.appendChild(nav());\n        content.appendChild(Object(_home__WEBPACK_IMPORTED_MODULE_0__[\"home\"])());\n        content.appendChild(Object(_footer__WEBPACK_IMPORTED_MODULE_1__[\"footer\"])());\n\n    });\n\n    menuLink.innerText = 'Menu';\n    menuLink.href = '#';\n\n    contactLink.innerText = 'Contact Us';\n    contactLink.href = '#';\n\n    navTag.appendChild(homeLink);\n    navTag.appendChild(menuLink);\n    navTag.appendChild(contactLink);\n\n    header.appendChild(navTag);\n\n    return header;\n\n};\n\n//# sourceURL=webpack:///./src/header.js?");
+
+/***/ }),
+
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/*! exports provided: home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"home\", function() { return home; });\n// home page\nconst home = () => {\n\n    const header = document.createElement('section');\n    const title = document.createElement('h1');\n    const subtitle = document.createElement('h3');\n\n    title.textContent = 'The Coffee Shop';\n    subtitle.textContent = 'The Coffee Shop in small characters :)';\n    header.appendChild(title);\n    header.appendChild(subtitle);\n\n    return header;\n\n};\n\n\n//# sourceURL=webpack:///./src/home.js?");
 
 /***/ }),
 
@@ -105,7 +130,7 @@ eval("throw new Error(\"Module parse failed: Export 'footer' is not defined (42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements */ \"./src/domElements.js\");\n\n\nconst content = document.getElementById('content');\n\ncontent.appendChild(Object(_domElements__WEBPACK_IMPORTED_MODULE_0__[\"header\"])());\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home */ \"./src/home.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n\n\n\n\nconst content = document.getElementById('content');\n\ncontent.appendChild(Object(_header__WEBPACK_IMPORTED_MODULE_0__[\"nav\"])());\ncontent.appendChild(Object(_home__WEBPACK_IMPORTED_MODULE_1__[\"home\"])());\ncontent.appendChild(Object(_footer__WEBPACK_IMPORTED_MODULE_2__[\"footer\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

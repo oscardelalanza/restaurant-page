@@ -1,24 +1,39 @@
+import { home } from './home';
+import { footer } from './footer';
+
 // navigation menu
-const nav = () => {
+export const nav = () => {
 
     const header = document.createElement('header');
-    const nav = document.createElement('nav');
-    const home = document.createElement('a');
-    const menu = document.createElement('a');
-    const contact = document.createElement('a');
+    const navTag = document.createElement('nav');
+    const homeLink = document.createElement('a');
+    const menuLink = document.createElement('a');
+    const contactLink = document.createElement('a');
+    const content = document.getElementById('content');
 
-    home.textContent = 'Home';
-    menu.textContent = 'Menu';
-    contact.textContent = 'Contact Us';
+    homeLink.innerText = 'Home';
+    homeLink.href = '#';
+    homeLink.addEventListener('click', () => {
 
-    nav.appendChild(home);
-    nav.appendChild(menu);
-    nav.appendChild(contact);
+        content.innerText = '';
+        content.appendChild(nav());
+        content.appendChild(home());
+        content.appendChild(footer());
 
-    header.appendChild(nav);
+    });
 
-};
+    menuLink.innerText = 'Menu';
+    menuLink.href = '#';
 
-export {
-    nav,
+    contactLink.innerText = 'Contact Us';
+    contactLink.href = '#';
+
+    navTag.appendChild(homeLink);
+    navTag.appendChild(menuLink);
+    navTag.appendChild(contactLink);
+
+    header.appendChild(navTag);
+
+    return header;
+
 };
