@@ -165,7 +165,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"home\", function() { return home; });\n// home page\nconst home = () => {\n\n    const home = document.createElement('div');\n    const title = document.createElement('h2');\n    const content = document.createElement('p');\n\n    return home;\n};\n\n\n//# sourceURL=webpack:///./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"home\", function() { return home; });\n/* harmony import */ var _img_about_img_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./img/about-img.jpg */ \"./src/img/about-img.jpg\");\n\n\n// home page\nconst home = () => {\n\n    const home = document.createElement('div');\n    const title = document.createElement('h2');\n    const subtitle = document.createElement('h4');\n    const description = document.createElement('p');\n    const imgContainer = document.createElement('div');\n    const img = document.createElement('img');\n\n    title.innerText = 'About The Coffee Shop';\n    subtitle.innerText = 'Here should be the description but instead of that here is just a random text :)';\n    description.innerText = 'Morbi euismod lacus arcu, volutpat rutrum lacus vulputate quis. Suspendisse eget risus ' +\n        'luctus eros aliquet vestibulum vel nec sem. Aenean facilisis elementum dolor, sed lobortis eros lacinia vel. ' +\n        'Mauris nec quam eu metus porttitor pharetra tincidunt a lacus. Donec sit amet viverra augue. Aenean nunc ' +\n        'sapien, posuere nec suscipit non, convallis at metus. Sed accumsan fringilla diam. Sed tempus, diam ut rutrum ' +\n        'accumsan, leo dolor pharetra mauris, non scelerisque quam est id velit.';\n    img.src = _img_about_img_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\n\n    imgContainer.appendChild(img);\n    home.appendChild(title);\n    home.appendChild(subtitle);\n    home.appendChild(imgContainer);\n    home.appendChild(description);\n\n    return home;\n\n};\n\n\n//# sourceURL=webpack:///./src/home.js?");
+
+/***/ }),
+
+/***/ "./src/img/about-img.jpg":
+/*!*******************************!*\
+  !*** ./src/img/about-img.jpg ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"5f0e5e5d2aee701ad8cfdfbd4723c519.jpg\");\n\n//# sourceURL=webpack:///./src/img/about-img.jpg?");
 
 /***/ }),
 
