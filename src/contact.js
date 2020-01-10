@@ -11,18 +11,18 @@ const location = () => {
     const week = document.createElement('p');
     const weekend = document.createElement('p');
 
-    title.textContent = 'Location';
+    title.innerText = 'Location';
 
-    street.textContent = '1 Macquarie St, Sydney NSW 2000, Australia';
-    phone.textContent = '+61 2 9240 2255';
-    email.textContent = 'example@email.com';
+    street.innerText = '1 Macquarie St, Sydney NSW 2000, Australia';
+    phone.innerText = '+61 2 9240 2255';
+    email.innerText = 'example@email.com';
     address.appendChild(street);
     address.appendChild(phone);
     address.appendChild(email);
 
-    subtitle.textContent = 'Schedule';
-    week.textContent = 'Monday to Friday 12:00 - 22:30';
-    weekend.textContent = 'Saturday and Sunday 12:00 - 22:00';
+    subtitle.innerText = 'Schedule';
+    week.innerText = 'Monday to Friday 12:00 - 22:30';
+    weekend.innerText = 'Saturday and Sunday 12:00 - 22:00';
     schedule.appendChild(subtitle);
     schedule.appendChild(week);
     schedule.appendChild(weekend);
