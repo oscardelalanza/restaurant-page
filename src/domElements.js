@@ -117,22 +117,6 @@ const _map = () => {
 
 /* =============================================== Exported Methods ================================================= */
 
-// method for create header
-const header = () => {
-
-    const header = document.createElement('header');
-    const title = document.createElement('h1');
-    const subtitle = document.createElement('h3');
-
-    title.textContent = 'The Coffee Shop';
-    subtitle.textContent = 'The Coffee Shop in small characters :)';
-    header.appendChild(title);
-    header.appendChild(subtitle);
-
-    return header;
-
-};
-
 // method for create main
 const main = () => {
 
