@@ -1,5 +1,6 @@
 import { home } from './home';
 import { footer } from './footer';
+import { menu, gallery } from './menu';
 
 // navigation menu
 export const nav = () => {
@@ -24,6 +25,15 @@ export const nav = () => {
 
     menuLink.innerText = 'Menu';
     menuLink.href = '#';
+    menuLink.addEventListener('click', () => {
+
+        content.innerHTML = '';
+        content.appendChild(nav());
+        content.appendChild(menu());
+        content.appendChild(gallery());
+        content.appendChild(footer());
+
+    });
 
     contactLink.innerText = 'Contact Us';
     contactLink.href = '#';
