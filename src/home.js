@@ -1,3 +1,4 @@
+// home page
 export const home = () => {
 
     const header = document.createElement('section');
