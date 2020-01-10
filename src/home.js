@@ -5,8 +5,8 @@ export const home = () => {
     const title = document.createElement('h1');
     const subtitle = document.createElement('h3');
 
-    title.textContent = 'The Coffee Shop';
-    subtitle.textContent = 'The Coffee Shop in small characters :)';
+    title.innerText = 'The Coffee Shop';
+    subtitle.innerText = 'The Coffee Shop in small characters :)';
     header.appendChild(title);
     header.appendChild(subtitle);
 

@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"home\", function() { return home; });\n// home page\nconst home = () => {\n\n    const header = document.createElement('section');\n    const title = document.createElement('h1');\n    const subtitle = document.createElement('h3');\n\n    title.textContent = 'The Coffee Shop';\n    subtitle.textContent = 'The Coffee Shop in small characters :)';\n    header.appendChild(title);\n    header.appendChild(subtitle);\n\n    return header;\n\n};\n\n\n//# sourceURL=webpack:///./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"home\", function() { return home; });\n// home page\nconst home = () => {\n\n    const header = document.createElement('section');\n    const title = document.createElement('h1');\n    const subtitle = document.createElement('h3');\n\n    title.innerText = 'The Coffee Shop';\n    subtitle.innerText = 'The Coffee Shop in small characters :)';\n    header.appendChild(title);\n    header.appendChild(subtitle);\n\n    return header;\n\n};\n\n\n//# sourceURL=webpack:///./src/home.js?");
 
 /***/ }),
 
