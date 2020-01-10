@@ -7,24 +7,7 @@ import G6 from './img/gallery-6.jpg';
 import G7 from './img/gallery-7.jpg';
 import G8 from './img/gallery-8.jpg';
 
-// method for create a basic image gallery
-const _gallery = () => {
 
-    const gallery = document.createElement('div');
-    const images = [G1, G2, G3, G4, G5, G6, G7, G8];
-
-    images.forEach(element => {
-
-        const img = document.createElement('img');
-
-        img.src = element;
-        gallery.appendChild(img);
-
-    });
-
-    return gallery;
-
-};
 
 /* =============================================== Exported Methods ================================================= */
 
