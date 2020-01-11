@@ -10,6 +10,9 @@ export const home = () => {
     const imgContainer = document.createElement('div');
     const img = document.createElement('img');
 
+    // TODO: continue here
+    // TODO: add about container
+
     title.innerText = 'About The Coffee Shop';
     subtitle.innerText = 'Here should be the description but instead of that here is just a random text :)';
     description.innerText = 'Morbi euismod lacus arcu, volutpat rutrum lacus vulputate quis. Suspendisse eget risus ' +
@@ -23,10 +26,10 @@ export const home = () => {
     home.classList.add('home');
 
     imgContainer.appendChild(img);
+    home.appendChild(imgContainer);
     home.appendChild(title);
     home.appendChild(subtitle);
     home.appendChild(description);
-    home.appendChild(imgContainer);
 
     return home;
 
