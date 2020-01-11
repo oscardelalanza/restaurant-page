@@ -14,11 +14,15 @@ header {
   background: url("../img/bg-img.jpg");
   background-size: cover;
   color: #fff;
+  width: 100%;
+  position: relative;
 
   nav {
     display: flex;
     justify-content: flex-end;
     padding-right: 30px;
+    position: relative;
+    z-index: 1;
 
     a {
       color: #fff;
@@ -31,6 +35,35 @@ header {
       &:hover {
         border-bottom: solid 1px #fff;
       }
+    }
+  }
+
+  .title-container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    h1, h3 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-weight: 300;
+      font-size: 48px;
+    }
+
+    h3 {
+      font-weight: 200;
+      font-style: italic;
+      font-size: 24px;
     }
   }
 }

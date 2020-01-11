@@ -20,16 +20,15 @@ const nav = () => {
     contactLink.innerText = 'Contact Us';
     contactLink.href = '#';
 
-    title.innerText = 'The Coffee Shop';
-    subtitle.innerText = 'The Coffee Shop in small characters :)';
     titleContainer.className = 'title-container';
+    title.innerText = 'The Coffee Shop';
+    subtitle.innerText = 'The Coffee Shop, but with smaller characters :)';
 
     titleContainer.appendChild(title);
     titleContainer.appendChild(subtitle);
     navTag.appendChild(homeLink);
     navTag.appendChild(menuLink);
     navTag.appendChild(contactLink);
-
     header.appendChild(navTag);
     header.appendChild(titleContainer);
 
