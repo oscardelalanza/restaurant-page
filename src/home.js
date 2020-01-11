@@ -25,8 +25,8 @@ export const home = () => {
     imgContainer.appendChild(img);
     home.appendChild(title);
     home.appendChild(subtitle);
-    home.appendChild(imgContainer);
     home.appendChild(description);
+    home.appendChild(imgContainer);
 
     return home;
 
