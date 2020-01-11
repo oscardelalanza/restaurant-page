@@ -7,6 +7,7 @@ const nav = () => {
 
     const header = document.createElement('header');
     const navTag = document.createElement('nav');
+    const titleContainer = document.createElement('div');
     const title = document.createElement('h1');
     const subtitle = document.createElement('h3');
 
@@ -21,13 +22,16 @@ const nav = () => {
 
     title.innerText = 'The Coffee Shop';
     subtitle.innerText = 'The Coffee Shop in small characters :)';
+    titleContainer.className = 'title-container';
 
+    titleContainer.appendChild(title);
+    titleContainer.appendChild(subtitle);
     navTag.appendChild(homeLink);
     navTag.appendChild(menuLink);
     navTag.appendChild(contactLink);
+
     header.appendChild(navTag);
-    header.appendChild(title);
-    header.appendChild(subtitle);
+    header.appendChild(titleContainer);
 
     return header;
 
