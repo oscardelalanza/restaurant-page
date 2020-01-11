@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"* {\\n  border: 0;\\n  padding: 0;\\n  margin: 0;\\n  box-sizing: border-box;\\n  font-family: sans-serif; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/sass/styles.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../fonts/Roboto-Thin.ttf */ \"./src/fonts/Roboto-Thin.ttf\");\nvar ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../fonts/Roboto-Light.ttf */ \"./src/fonts/Roboto-Light.ttf\");\nvar ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! ../fonts/Roboto-Regular.ttf */ \"./src/fonts/Roboto-Regular.ttf\");\nvar ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(/*! ../fonts/Roboto-Medium.ttf */ \"./src/fonts/Roboto-Medium.ttf\");\nvar ___CSS_LOADER_URL_IMPORT_4___ = __webpack_require__(/*! ../fonts/Roboto-Bold.ttf */ \"./src/fonts/Roboto-Bold.ttf\");\nvar ___CSS_LOADER_URL_IMPORT_5___ = __webpack_require__(/*! ../img/bg-img.jpg */ \"./src/img/bg-img.jpg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);\nvar ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);\nvar ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___);\nvar ___CSS_LOADER_URL_REPLACEMENT_4___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_4___);\nvar ___CSS_LOADER_URL_REPLACEMENT_5___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_5___);\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: \\\"Roboto\\\";\\n  font-weight: 200;\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \"); }\\n\\n@font-face {\\n  font-family: \\\"Roboto\\\";\\n  font-weight: 300;\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \"); }\\n\\n@font-face {\\n  font-family: \\\"Roboto\\\";\\n  font-weight: 400;\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_2___ + \"); }\\n\\n@font-face {\\n  font-family: \\\"Roboto\\\";\\n  font-weight: 600;\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_3___ + \"); }\\n\\n@font-face {\\n  font-family: \\\"Roboto\\\";\\n  font-weight: 700;\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_4___ + \"); }\\n\\n* {\\n  border: 0;\\n  padding: 0;\\n  margin: 0;\\n  box-sizing: border-box;\\n  font-family: Roboto, serif;\\n  text-decoration: none; }\\n\\nheader {\\n  height: 550px;\\n  background: url(\" + ___CSS_LOADER_URL_REPLACEMENT_5___ + \");\\n  background-size: cover;\\n  color: #fff; }\\n  header nav {\\n    display: flex;\\n    justify-content: flex-end;\\n    padding-right: 30px; }\\n    header nav a {\\n      color: #fff;\\n      display: inline-block;\\n      margin: 30px 30px;\\n      font-size: 20px;\\n      font-weight: 200;\\n      border-bottom: solid 1px transparent; }\\n      header nav a:hover {\\n        border-bottom: solid 1px #fff; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/sass/styles.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -106,6 +106,18 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 
 "use strict";
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    for (var i = 0; i < modules.length; i++) {\n      var item = [].concat(modules[i]);\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot || '').concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // eslint-disable-next-line no-param-reassign\n    options = {};\n  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n\n\n  url = url && url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  }\n\n  if (options.hash) {\n    // eslint-disable-next-line no-param-reassign\n    url += options.hash;\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -130,6 +142,66 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"location\", function() { return location; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"map\", function() { return map; });\nconst location = () => {\n\n    const location = document.createElement('div');\n    const address = document.createElement('div');\n    const schedule = document.createElement('div');\n    const title = document.createElement('h3');\n    const street = document.createElement('p');\n    const phone = document.createElement('p');\n    const email = document.createElement('p');\n    const subtitle = document.createElement('h4');\n    const week = document.createElement('p');\n    const weekend = document.createElement('p');\n\n    title.innerText = 'Location';\n\n    street.innerText = '1 Macquarie St, Sydney NSW 2000, Australia';\n    phone.innerText = '+61 2 9240 2255';\n    email.innerText = 'example@email.com';\n    address.appendChild(street);\n    address.appendChild(phone);\n    address.appendChild(email);\n\n    subtitle.innerText = 'Schedule';\n    week.innerText = 'Monday to Friday 12:00 - 22:30';\n    weekend.innerText = 'Saturday and Sunday 12:00 - 22:00';\n    schedule.appendChild(subtitle);\n    schedule.appendChild(week);\n    schedule.appendChild(weekend);\n\n    location.appendChild(title);\n    location.appendChild(address);\n    location.appendChild(schedule);\n\n    return location;\n\n};\n\n// method for insert a map\nconst map = () => {\n\n    const map = document.createElement('iframe');\n\n    map.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d338.3397555421225!2d151.21314029242754!3d-33.85956641319514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae67d5541c77%3A0x8af817cc7e3857d7!2sAria%20Restaurant%20Sydney!5e0!3m2!1ses!2smx!4v1578622220577!5m2!1ses!2smx';\n    map.width = '800';\n    map.height = '600';\n    map.frameBorder = '0';\n    map.style.border = '0';\n\n    return map;\n};\n\n\n\n//# sourceURL=webpack:///./src/contact.js?");
+
+/***/ }),
+
+/***/ "./src/fonts/Roboto-Bold.ttf":
+/*!***********************************!*\
+  !*** ./src/fonts/Roboto-Bold.ttf ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"e07df86cef2e721115583d61d1fb68a6.ttf\");\n\n//# sourceURL=webpack:///./src/fonts/Roboto-Bold.ttf?");
+
+/***/ }),
+
+/***/ "./src/fonts/Roboto-Light.ttf":
+/*!************************************!*\
+  !*** ./src/fonts/Roboto-Light.ttf ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"88823c2015ffd5fa89d567e17297a137.ttf\");\n\n//# sourceURL=webpack:///./src/fonts/Roboto-Light.ttf?");
+
+/***/ }),
+
+/***/ "./src/fonts/Roboto-Medium.ttf":
+/*!*************************************!*\
+  !*** ./src/fonts/Roboto-Medium.ttf ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"58aef543c97bbaf6a9896e8484456d98.ttf\");\n\n//# sourceURL=webpack:///./src/fonts/Roboto-Medium.ttf?");
+
+/***/ }),
+
+/***/ "./src/fonts/Roboto-Regular.ttf":
+/*!**************************************!*\
+  !*** ./src/fonts/Roboto-Regular.ttf ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"11eabca2251325cfc5589c9c6fb57b46.ttf\");\n\n//# sourceURL=webpack:///./src/fonts/Roboto-Regular.ttf?");
+
+/***/ }),
+
+/***/ "./src/fonts/Roboto-Thin.ttf":
+/*!***********************************!*\
+  !*** ./src/fonts/Roboto-Thin.ttf ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"321de678e592d0b8f44f1a82d7ca4b62.ttf\");\n\n//# sourceURL=webpack:///./src/fonts/Roboto-Thin.ttf?");
 
 /***/ }),
 
@@ -178,6 +250,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"5f0e5e5d2aee701ad8cfdfbd4723c519.jpg\");\n\n//# sourceURL=webpack:///./src/img/about-img.jpg?");
+
+/***/ }),
+
+/***/ "./src/img/bg-img.jpg":
+/*!****************************!*\
+  !*** ./src/img/bg-img.jpg ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fe7988be77cc336cf7bf0ee8d7bca7fa.jpg\");\n\n//# sourceURL=webpack:///./src/img/bg-img.jpg?");
 
 /***/ }),
 
