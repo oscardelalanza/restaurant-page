@@ -18,6 +18,9 @@ export const home = () => {
         'sapien, posuere nec suscipit non, convallis at metus. Sed accumsan fringilla diam. Sed tempus, diam ut rutrum ' +
         'accumsan, leo dolor pharetra mauris, non scelerisque quam est id velit.';
     img.src = About;
+    imgContainer.className = 'img-container';
+    home.classList.add('container');
+    home.classList.add('home');
 
     imgContainer.appendChild(img);
     home.appendChild(title);
