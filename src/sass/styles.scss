@@ -80,13 +80,48 @@ header {
 
 /* ==================================================== home ======================================================== */
 .home {
+  position: relative;
+  height: 750px;
+
   .img-container {
     width: 80%;
     height: 400px;
     overflow: hidden;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: -48px;
+    z-index: 0;
 
     img {
       width: 100%;
+    }
+  }
+
+  .about-container {
+    width: 50%;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 160px;
+    float: right;
+
+    h2 {
+      font-size: 48px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    h4 {
+      font-weight: 300;
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 28px;
+    }
+
+    p {
+      line-height: 28px;
+      text-align: justify;
     }
   }
 }
