@@ -1,4 +1,3 @@
-// method for create a basic menu
 import G1 from './img/gallery-1.jpg';
 import G2 from './img/gallery-2.jpg';
 import G3 from './img/gallery-3.jpg';
@@ -8,36 +7,84 @@ import G6 from './img/gallery-6.jpg';
 import G7 from './img/gallery-7.jpg';
 import G8 from './img/gallery-8.jpg';
 
+// method for create a basic menu
 const menu = () => {
     const menu = document.createElement('div');
     const articleDrinks = document.createElement('article');
     const articleFoods = document.createElement('article');
-    const title = document.createElement('h3');
+    const title = document.createElement('h2');
+    const drinks = ['Cappuccino', 'Mocha', 'Latte', 'Espresso', 'Macchiato'];
+    const foods = ['Sandwich', 'Biscuit', 'Wrap', 'Bagel', 'Cake'];
+    const articleContainer = document.createElement('div');
+    const externalBorder = document.createElement('div');
+    const foodTitle = document.createElement('p');
+    const drinksTitle = document.createElement('p');
 
     title.innerText = 'Menu';
+    foodTitle.innerText = 'Food';
+    drinksTitle.innerText = 'Drinks';
 
-    for (let i = 0; i < 5; i++) {
+    articleDrinks.appendChild(drinksTitle);
+    articleFoods.appendChild(foodTitle);
+
+    drinks.forEach(drink => {
 
         const name = document.createElement('p');
         const price = document.createElement('p');
         const description = document. createElement('p');
+        const product = document.createElement('div');
 
-        name.innerText = 'Lorem ipsum dolor.';
+        name.innerText = drink;
         price.innerText = '$' + Math.floor(Math.random() * 30).toString();
         description.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, non.';
 
-        articleDrinks.appendChild(name);
-        articleDrinks.appendChild(price);
-        articleDrinks.appendChild(description);
-        articleFoods.appendChild(name);
-        articleFoods.appendChild(price);
-        articleFoods.appendChild(description);
+        name.classList.add('name');
+        price.classList.add('price');
+        description.classList.add('description');
 
-    }
+        product.appendChild(name);
+        product.appendChild(price);
+        product.appendChild(description);
+        articleDrinks.appendChild(product);
 
+    });
+
+    foods.forEach(food => {
+
+        const name = document.createElement('p');
+        const price = document.createElement('p');
+        const description = document. createElement('p');
+        const product = document.createElement('div');
+
+        name.innerText = food;
+        price.innerText = '$' + Math.floor(Math.random() * 30).toString();
+        description.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, non.';
+
+        name.classList.add('name');
+        price.classList.add('price');
+        description.classList.add('description');
+
+        product.appendChild(name);
+        product.appendChild(price);
+        product.appendChild(description);
+        articleFoods.appendChild(product);
+
+    });
+
+    menu.classList.add('menu');
+    menu.classList.add('container');
+    foodTitle.classList.add('menu-title');
+    drinksTitle.classList.add('menu-title');
+    externalBorder.classList.add('external-border');
+    articleContainer.classList.add('external-border');
+    articleContainer.classList.add('external-border');
+    articleContainer.classList.add('article-container');
+
+    articleContainer.appendChild(articleDrinks);
+    articleContainer.appendChild(articleFoods);
+    externalBorder.appendChild(articleContainer);
     menu.appendChild(title);
-    menu.appendChild(articleDrinks);
-    menu.appendChild(articleFoods);
+    menu.appendChild(externalBorder);
 
     return menu;
 
