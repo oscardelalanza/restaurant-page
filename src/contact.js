@@ -10,26 +10,34 @@ const location = () => {
     const subtitle = document.createElement('h4');
     const week = document.createElement('p');
     const weekend = document.createElement('p');
+    const info = document.createElement('div');
 
-    title.innerText = 'Location';
+    title.innerText = 'Visit Us';
 
-    street.innerText = '1 Macquarie St, Sydney NSW 2000, Australia';
+    street.innerHTML = '1 Macquarie St,</br>Sydney NSW 2000, Australia';
     phone.innerText = '+61 2 9240 2255';
     email.innerText = 'example@email.com';
+
+    subtitle.innerText = 'Schedule';
+    week.innerHTML = 'Monday to Friday</br>12:00 - 22:30';
+    weekend.innerHTML = 'Saturday and Sunday</br>12:00 - 22:00';
+
+    location.classList.add('location');
+    info.classList.add('container');
+    address.classList.add('address');
+    schedule.classList.add('schedule');
+    street.classList.add('street');
+
     address.appendChild(street);
     address.appendChild(phone);
     address.appendChild(email);
-
-    subtitle.innerText = 'Schedule';
-    week.innerText = 'Monday to Friday 12:00 - 22:30';
-    weekend.innerText = 'Saturday and Sunday 12:00 - 22:00';
     schedule.appendChild(subtitle);
     schedule.appendChild(week);
     schedule.appendChild(weekend);
-
+    info.appendChild(address);
+    info.appendChild(schedule);
     location.appendChild(title);
-    location.appendChild(address);
-    location.appendChild(schedule);
+    location.appendChild(info);
 
     return location;
 

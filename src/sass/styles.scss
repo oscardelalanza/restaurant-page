@@ -182,7 +182,6 @@ header {
       }
     }
   }
-
 }
 
 /* ================================================== gallery ======================================================= */
@@ -204,6 +203,50 @@ header {
       &:hover {
         opacity: 1;
         transition: opacity 0.3s ease;
+      }
+    }
+  }
+}
+
+/* ================================================= location ======================================================= */
+.location {
+  background: #fff;
+  padding: 64px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+
+    .address{
+      width: 50%;
+
+      .street {
+        margin-bottom: 15px;
+      }
+    }
+
+    .schedule {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+
+      h4 {
+        width: 100%;
+        text-align: center;
+      }
+
+      p {
+        width: 50%;
+        text-align: center;
       }
     }
   }
