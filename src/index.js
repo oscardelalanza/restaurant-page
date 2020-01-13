@@ -35,7 +35,6 @@ contactLink.addEventListener('click', () => {
     content.innerHTML = '';
     content.appendChild(nav());
     content.appendChild(location());
-    content.appendChild(map());
     content.appendChild(footer());
 
 });

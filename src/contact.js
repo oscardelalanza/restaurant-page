@@ -1,4 +1,4 @@
-const location = () => {
+const _location = () => {
 
     const location = document.createElement('div');
     const address = document.createElement('div');
@@ -44,7 +44,7 @@ const location = () => {
 };
 
 // method for insert a map
-const map = () => {
+const _map = () => {
 
     const map = document.createElement('iframe');
 
@@ -59,9 +59,19 @@ const map = () => {
     return map;
 };
 
+const location = () => {
+
+    const locationContainer = document.createElement('div');
+
+    locationContainer.appendChild(_location());
+    locationContainer.appendChild(_map());
+
+    return locationContainer;
+
+};
+
 export {
 
     location,
-    map,
 
 }
