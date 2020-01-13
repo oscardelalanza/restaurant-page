@@ -13,7 +13,7 @@ You can find the original project specification at: [The Odin Project](https://w
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/oscardelalanza/restaurant-page/feature/restaurant/dist/index.html)
+[Live Demo Link](https://raw.githack.com/oscardelalanza/restaurant-page/feature/restaurant/dist/index.html)
 
 ## Authors
 
