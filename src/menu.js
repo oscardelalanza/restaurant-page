@@ -98,12 +98,19 @@ const gallery = () => {
 
     images.forEach(element => {
 
+        const imgDiv = document.createElement('div');
         const img = document.createElement('img');
 
         img.src = element;
-        gallery.appendChild(img);
+
+        imgDiv.classList.add('img-container');
+
+        imgDiv.appendChild(img);
+        gallery.appendChild(imgDiv);
 
     });
+
+    gallery.classList.add('gallery');
 
     return gallery;
 
