@@ -8,7 +8,7 @@ import G7 from './img/gallery-7.jpg';
 import G8 from './img/gallery-8.jpg';
 
 // method for create a basic menu
-const menu = () => {
+const _menu = () => {
     const menu = document.createElement('div');
     const articleDrinks = document.createElement('article');
     const articleFoods = document.createElement('article');
@@ -91,7 +91,7 @@ const menu = () => {
 };
 
 // method for create a basic image gallery
-const gallery = () => {
+const _gallery = () => {
 
     const gallery = document.createElement('div');
     const images = [G1, G2, G3, G4, G5, G6, G7, G8];
@@ -116,9 +116,19 @@ const gallery = () => {
 
 };
 
+const menu = () => {
+
+    const menuContainer = document.createElement('div');
+
+    menuContainer.appendChild(_menu());
+    menuContainer.appendChild(_gallery());
+
+    return menuContainer;
+
+};
+
 export {
 
     menu,
-    gallery,
 
 }

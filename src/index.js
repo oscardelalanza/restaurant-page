@@ -25,7 +25,6 @@ menuLink.addEventListener('click', () => {
     content.innerHTML = '';
     content.appendChild(nav());
     content.appendChild(menu());
-    content.appendChild(gallery());
     content.appendChild(footer());
 
 });
