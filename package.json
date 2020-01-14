@@ -1,0 +1,32 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Microverse ES6 project",
+  "private": true,
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscardelalanza/restaurant-page.git"
+  },
+  "author": "Oscar De La Lanza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscardelalanza/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/oscardelalanza/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^3.4.1",
+    "file-loader": "^5.0.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

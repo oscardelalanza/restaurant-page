@@ -1,0 +1,269 @@
+@import "fonts";
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, serif;
+  text-decoration: none;
+}
+
+#content {
+  background: url("../img/clean-gray-paper.png");
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ==================================================== header ====================================================== */
+header {
+  height: 550px;
+  background: url("../img/bg-img.jpg") fixed;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  position: relative;
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+
+    a {
+      color: #fff;
+      display: inline-block;
+      margin: 30px 30px;
+      font-size: 20px;
+      font-weight: 200;
+      border-bottom: solid 1px transparent;
+
+      &:hover {
+        border-bottom: solid 1px #fff;
+      }
+    }
+  }
+
+  .title-container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+    h1, h3 {
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 15px;
+      font-weight: 300;
+      font-size: 48px;
+    }
+
+    h3 {
+      font-weight: 200;
+      font-style: italic;
+      font-size: 24px;
+    }
+  }
+}
+
+/* ==================================================== home ======================================================== */
+.home {
+  position: relative;
+  height: 750px;
+
+  .img-container {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: -48px;
+    z-index: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .about-container {
+    width: 50%;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top: 160px;
+    float: right;
+
+    h2 {
+      font-size: 48px;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+
+    h4 {
+      font-weight: 300;
+      font-style: italic;
+      margin-bottom: 20px;
+      line-height: 28px;
+    }
+
+    p {
+      line-height: 28px;
+      text-align: justify;
+    }
+  }
+}
+
+/* =================================================== Menu ========================================================= */
+.menu {
+  margin-bottom: 60px;
+
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  .external-border {
+    border: solid 1px #000;
+    padding: 10px;
+  }
+
+  .article-container {
+    display: flex;
+
+    article {
+      padding: 15px;
+
+      .menu-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 28px;
+      }
+
+      div {
+        border-bottom: dotted 2px #000;
+        margin-bottom: 32px;
+        padding-bottom: 16px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .name {
+          width: 80%;
+          font-weight: 600;
+          font-size: 20px;
+        }
+
+        .price {
+          width: 20%;
+          text-align: right;
+          font-size: 20px;
+        }
+
+        .description {
+          margin-top: 15px;
+          color: #676767;
+        }
+      }
+    }
+  }
+}
+
+/* ================================================== gallery ======================================================= */
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .img-container {
+    width: 25%;
+    height: 240px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+    }
+  }
+}
+
+/* ================================================= location ======================================================= */
+.location {
+  background: #fff;
+  padding: 64px 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+
+    .address{
+      width: 50%;
+
+      .street {
+        margin-bottom: 15px;
+      }
+    }
+
+    .schedule {
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+
+      h4 {
+        width: 100%;
+        text-align: center;
+      }
+
+      p {
+        width: 50%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* =================================================== map ========================================================== */
+.map {
+  width: 100%;
+}
+
+/* ================================================== footer ======================================================== */
+footer {
+  background: #000;
+  color: #fff;
+
+  p {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
