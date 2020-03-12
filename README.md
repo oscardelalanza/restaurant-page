@@ -23,12 +23,6 @@ You can find the original project specification at: [The Odin Project](https://w
 - Twitter: [@oscardelalanza](https://twitter.com/oscardelalanza)
 - Linkedin: [Oscar De La Lanza](https://www.linkedin.com/in/oscardelalanza/)
 
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [Oscar De La Lanza](https://www.linkedin.com/in/oscardelalanza/)
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
