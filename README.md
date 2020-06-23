@@ -18,7 +18,8 @@ You can find the original project specification at: [The Odin Project](https://w
 ## Getting started
 
 This project consists of three sections `Home`, `Menu` and `Contact Us` each one of them can be accessed through the 
-`navigation bar` on the `top right` of the site.  
+`navigation bar` on the `top right` of the site (see the image below). 
+![navbar](./screenshots/navbar.png)
 
 ## Authors
 
