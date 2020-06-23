@@ -35,6 +35,12 @@ section contains a small gallery at the and of the page to show a combination of
 ![menu](./screenshots/menu.png)
 ![gallery](./screenshots/gallery.png)
 
+#### Contact Us
+This section can be accessed through the `navigation bar` after clicking the `Contact Us` link. It is used to show a simulation
+of contact information of a restaurant, including address, phone number, emails, schedule and a map with a mark of the physical
+location of the place.
+![contact](./screenshots/contact.png)
+
 ## Authors
 
 👤 **Oscar De La Lanza**
