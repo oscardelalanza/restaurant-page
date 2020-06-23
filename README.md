@@ -2,7 +2,7 @@
 This project comes after the introduction of the ES6 class keyword, ES6 modules, and webpack. The main goal of this project is for the student to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
 
 
-![screenshot](https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80)
+![screenshot](./Captura%20de%20pantalla%20de%202020-06-22%2019-32-01.png)
 
 You can find the original project specification at: [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
