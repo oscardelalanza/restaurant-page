@@ -24,9 +24,10 @@ This project consists of three sections `Home`, `Menu` and `Contact Us` each one
 ![navigation-bar](./screenshots/navbar.png)
 
 #### Home
-This section can be accessed through the `navigation bar` on the `header` oh the site. It is used to show the `About Us`
+This section can be accessed through the `navigation bar` after clicking the `Home` link. It is used to show the `About Us`
 content of the restaurant (in this case it's a simulation).
 ![home](./screenshots/home.png)
+
 ## Authors
 
 👤 **Oscar De La Lanza**
