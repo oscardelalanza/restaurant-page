@@ -28,6 +28,13 @@ This section can be accessed through the `navigation bar` after clicking the `Ho
 content of the restaurant (in this case it's a simulation).
 ![home](./screenshots/home.png)
 
+#### Menu
+This section can be accessed through the `navigation bar` after clicking the `Menu` link. It is used to show a simulation
+of a restaurant Menu which contains a list of Drinks and a list of Food separated into two different columns. Also, this
+section contains a small gallery at the and of the page to show a combination of pictures of drinks, foods and the place itself.
+![menu](./screenshots/menu.png)
+![gallery](./screenshots/gallery.png)
+
 ## Authors
 
 👤 **Oscar De La Lanza**
