@@ -1,5 +1,7 @@
 # Restaurant page
-This project comes after the introduction of the ES6 class keyword, ES6 modules, and webpack. The main goal of this project is for the student to show the understanding of the benefits of modularized code as well as the ability to set up a javascript application made of different modules using webpack.
+> This project comes after the introduction of the ES6 class keyword, ES6 modules, and webpack. The main goal of this
+> project is for the student to show the understanding of the benefits of modularized code as well as the ability to set
+> up a javascript application made of different modules using webpack.
 
 
 ![screenshot](./screenshots/preview.png)
@@ -19,8 +21,12 @@ You can find the original project specification at: [The Odin Project](https://w
 
 This project consists of three sections `Home`, `Menu` and `Contact Us` each one of them can be accessed through the 
 `navigation bar` on the `top right` of the site (see the image below). 
-![navbar](./screenshots/navbar.png)
+![navigation-bar](./screenshots/navbar.png)
 
+#### Home
+This section can be accessed through the `navigation bar` on the `header` oh the site. It is used to show the `About Us`
+content of the restaurant (in this case it's a simulation).
+![home](./screenshots/home.png)
 ## Authors
 
 👤 **Oscar De La Lanza**
