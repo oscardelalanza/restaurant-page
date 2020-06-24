@@ -77,6 +77,12 @@ To start the local development server do the following
 To build the project do the following
 
 - run the command `npm run build`
+
+### Future features
+
+- transitions on section change
+- smooth scroll behavior
+- animations in home page
  
 ## Authors
 
