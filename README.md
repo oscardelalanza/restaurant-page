@@ -6,7 +6,7 @@
 
 ![screenshot](./screenshots/preview.png)
 
-You can find the original project specification at: [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
+You can find the original project specification at [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
 ## Built With
 
@@ -30,14 +30,14 @@ content of the restaurant (in this case it's a simulation).
 
 #### Menu
 This section can be accessed through the `navigation bar` after clicking the `Menu` link. It is used to show a simulation
-of a restaurant Menu which contains a list of Drinks and a list of Food separated into two different columns. Also, this
-section contains a small gallery at the and of the page to show a combination of pictures of drinks, foods and the place itself.
+of a restaurant menu which contains a list of Drinks and a list of Food separated into two different columns. Also, this
+section contains a small gallery at the and of the page to show a combination of pictures of drinks, foods, and the place itself.
 ![menu](./screenshots/menu.png)
 ![gallery](./screenshots/gallery.png)
 
 #### Contact Us
 This section can be accessed through the `navigation bar` after clicking the `Contact Us` link. It is used to show a simulation
-of contact information of a restaurant, including address, phone number, emails, schedule and a map with a mark of the physical
+of contact information of a restaurant, including address, phone number, emails, schedule, and a map with a mark of the physical
 location of the place.
 ![contact](./screenshots/contact.png)
 
