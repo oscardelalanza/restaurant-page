@@ -27,17 +27,17 @@ You can find the original project specification in [The Odin Project](https://ww
 
 ### Setup
 
-To clone the project into your local environment do the following
+To clone the project into your local environment do the following.
 
-- Open a new `terminal` window and navigate to the directory where the project will be stored
-- Run the command `git clone git@github.com:oscardelalanza/restaurant-page.git`
-- Run the command `cd restaurant-page` to enter to the project directory
+- Open a new `terminal` window and navigate to the directory where the project will be stored.
+- Run the command `git clone git@github.com:oscardelalanza/restaurant-page.git`.
+- Run the command `cd restaurant-page` to enter to the project directory.
 
 ### Install
 
-To install the requires packages do the following
+To install the requires packages do the following.
 
-- Inside `restaurant-page` directory run the command `npm install`
+- Inside `restaurant-page` directory run the command `npm install`.
 
 ### Usage
 
@@ -68,17 +68,17 @@ location of the place.
 
 ### Run tests
 
-- This project doesn't contain tests
+- This project doesn't contain tests.
 
 ### Deployment
 
-To start the local development server do the following
+To start the local development server do the following.
 
-- Run the command `npm run dev` 
+- Run the command `npm run dev`.
 
-To build the project do the following
+To build the project do the following.
 
-- Run the command `npm run build`
+- Run the command `npm run build`.
  
 ## Authors
 
