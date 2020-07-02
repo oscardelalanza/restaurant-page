@@ -66,10 +66,6 @@ of contact information of a restaurant, including address, phone number, emails,
 location of the place.
 ![contact](./screenshots/contact.png)
 
-### Run tests
-
-- This project doesn't contain tests.
-
 ### Deployment
 
 To start the local development server do the following.
